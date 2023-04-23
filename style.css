@@ -67,7 +67,7 @@ html{
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-family: fantasy;
+    font-family: 'fantasy' 'cursive';
 }
 
 #task input[type="number"] {
@@ -80,7 +80,7 @@ html{
     border-width: 1px;
     top: 0;
     background-color: #EEE;
-    font-family: fantasy;
+    font-family: 'fantasy' 'cursive';
     text-align: center;
     margin: 0;
     height: 76px;
