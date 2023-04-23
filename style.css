@@ -2,8 +2,9 @@ html{
     font-size:60px;
 }
 
-.toggle-buttons{
+.toggle-buttons, #task, #task>div{
     display: flex;
+    margin-bottom: 0.5em;
 }
 
 .toggle-buttons .material-symbols-outlined{
@@ -67,7 +68,11 @@ html{
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-family: 'fantasy' 'cursive';
+    font-family: fantasy,impact,cursive;
+}
+
+#task .material-symbols-outlined{
+    font-size: 64px;
 }
 
 #task input[type="number"] {
@@ -80,26 +85,23 @@ html{
     border-width: 1px;
     top: 0;
     background-color: #EEE;
-    font-family: 'fantasy' 'cursive';
+    font-family: fantasy,impact,cursive;
     text-align: center;
     margin: 0;
-    height: 76px;
+    height: 100px;
 }
-#task span{
-    height: 100%;
-}
+
 #task button {
     background-color: #458dc4;
     border-color: lightgrey;
     color: white;
-    height: 76px;
+    height: 100px;
     font-size: 1em;
     top: 0;
     padding: 0px 25px;
     border-width: 1px;
     border-radius: 0px 20px 20px 0px;
     border-color: transparent;
-    margin-left: -15px;
 }
 
 input[type=number]::-webkit-inner-spin-button,
