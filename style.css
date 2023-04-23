@@ -1,0 +1,80 @@
+.toggle-buttons input[type="radio"] {
+    display: none;
+}
+
+.toggle-buttons label {
+    display: inline-block;
+    border: 1px solid #333;
+    border-radius: 0.5em;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    font: 0/0;
+    color: transparent;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.toggle-buttons label:hover {
+    background-image: none !important;
+    color: deeppink;
+}
+
+.toggle-buttons label[for=add] {
+    background-image: url("catSum.jpg");
+}
+
+
+.toggle-buttons label[for=subtract] {
+    background-image: url("catSub.jpg");
+}
+
+.toggle-buttons label[for=divide] {
+    background-image: url("catDiv.jpg");
+}
+
+.toggle-buttons label[for=multiply] {
+    background-image: url("catMul.jpg");
+}
+
+.toggle-buttons label[for=any] {
+    background-image: url("catMix.jpg");
+}
+
+
+
+.toggle-buttons input:checked+label {
+    filter: hue-rotate(305deg) saturate(3);
+}
+
+
+#task input[type="number"] {
+    width: 2em;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0;
+    font-size: 1em;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.toggle-buttons span {
+    width: 100%;
+    text-align: center;
+    padding-top: 4px;
+}
+
+
+.resultimage {
+    width: 100%;
+}
+
+.resultimage.hidden{
+    display: none;
+}
