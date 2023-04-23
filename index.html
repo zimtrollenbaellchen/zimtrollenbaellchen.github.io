@@ -32,11 +32,16 @@
 </form>
 
 <form id="task">
-    <span id="question">
-    </span>
-    =
-    <input id="result" type="number" step="0.1">
-    <button type="submit">↵</button>
+    <div>
+        <span id="question"></span>
+        <span>=</span>
+    </div>
+
+    <div style="display: flex;">
+        <input id="result" type="number" step="0.1">
+        <button type="submit">↵</button>
+    </div>
+    
 </form>
 
 <img class="resultimage hidden" id="OK" src="good.jpg">

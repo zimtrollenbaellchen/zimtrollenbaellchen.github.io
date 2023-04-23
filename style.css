@@ -1,3 +1,16 @@
+html{
+    font-size:60px;
+}
+
+.toggle-buttons{
+    display: flex;
+}
+
+.toggle-buttons .material-symbols-outlined{
+    display: flex;
+    font-size: 170px;
+}
+
 .toggle-buttons input[type="radio"] {
     display: none;
 }
@@ -5,10 +18,10 @@
 .toggle-buttons label {
     display: inline-block;
     border: 1px solid #333;
-    border-radius: 0.5em;
-    width: 2rem;
-    height: 2rem;
-    margin: 0.5rem;
+    border-radius: 10%;
+    flex: 1;
+    aspect-ratio: 1;
+    margin: 1%;
     font: 0/0;
     color: transparent;
     background-size: contain;
@@ -50,12 +63,43 @@
 }
 
 
+#task{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: fantasy;
+}
+
 #task input[type="number"] {
-    width: 2em;
     -moz-appearance: textfield;
     appearance: textfield;
     margin: 0;
     font-size: 1em;
+    border-radius: 20px 0px 0px 20px;
+    border-color: lightgrey;
+    border-width: 1px;
+    top: 0;
+    background-color: #EEE;
+    font-family: fantasy;
+    text-align: center;
+    margin: 0;
+    height: 76px;
+}
+#task span{
+    height: 100%;
+}
+#task button {
+    background-color: #458dc4;
+    border-color: lightgrey;
+    color: white;
+    height: 76px;
+    font-size: 1em;
+    top: 0;
+    padding: 0px 25px;
+    border-width: 1px;
+    border-radius: 0px 20px 20px 0px;
+    border-color: transparent;
+    margin-left: -15px;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -67,7 +111,6 @@ input[type=number]::-webkit-outer-spin-button {
 .toggle-buttons span {
     width: 100%;
     text-align: center;
-    padding-top: 4px;
 }
 
 
